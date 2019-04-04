@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+body {
+    background-color: #2C2F33;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainTitle {
+    color: #7289DA;
+    font-family: Arial;
+    padding-bottom: 2vh;
+}
+
+#newBody {
+    margin-top: 5px;
+    padding-top: 2vh;
+    width: 75%;
+    height: 95vh;
+    border: 2px solid #99AAB5;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+#hr {
+    width: 100%;
+    height: 0px;
+    border-top: 2px solid #99AAB5;
+}
+
+input {
+    background-color: #23272A;
+    padding: 10px;
+    border: 2px solid #99AAB5;
+    outline: none;
+    transition: border .25s, width .25s;
+    width: 41.5%;
+    color: #99AAB5;
+}
+
+input:focus{
+    border: 2px solid #7289DA;
+    width: 95%;
+}
+
+input:hover{
+    border: 2px solid #7289DA;
+}
+
+#pasteTitle {
+    color:#99AAB5;
+    padding-top:2vh;
+    padding-bottom: 1vh;
+}
+
+#preview {
+    border-radius: 10px;
+    border: 2px solid #161819;
+    width: 43.5%;
+    background-color: #23272A;
+    padding: 10px;
+}
+
+#run {
+    width: 33.8%;
+    padding: 5px;
+    background-color: #23272A;
+    margin-top: 1vh;
+    border: 2px solid #99AAB5;
+    outline: none;
+    color: #99AAB5;
+    font-size: 17px;
+    transition: color .25s;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#help {
+    width: 8.2%;
+    padding: 5px;
+    background-color: #23272A;
+    border: 2px solid #99AAB5;
+    outline: none;
+    color: #99AAB5;
+    font-size: 17px;
+    word-break: break-all;
+    transition: color .1s, border .1s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#help:active, #run:active {
+    border: 2px solid #7289DA;
+}
+
+#help:hover, #run:hover {
+    color: #7289DA;
+}
+
+#previewTitle {
+    color: #99AAB5;
+    margin-top: 50px;
+}
+
+#preview span {
+    text-align: left;
+}
+
+#statsTitle {
+    color:#99AAB5;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#stats h3 {
+    color: #7289DA;
+}
+
+#timeLeft {
+    font-variant-numeric: tabular-nums;
+}
+
+#form {
+    display: none;
+}
+
+iframe {
+    filter: invert(100%);
+    border: none;
+    outline: none;
+    width: 40.75%;
+    height: 80px;
+}

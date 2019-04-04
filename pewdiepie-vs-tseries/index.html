@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+    <html>
+        <head>
+            <title>PewDiePie vs T-Series</title>
+            
+            <meta charset='UTF-8'>
+            <link rel="icon" href="icon.png">
+            <meta name='keywords' content='pewdiepie, tseries, discord, webhook, generator, subgap'>
+            <meta name='description' content='Generate a customizable message that sends updates about PewDiePie vs T-Series to a Discord channel using the Discord API'>
+            <meta name='language' content='EN'>
+            <meta name='robots' content='index,follow'>
+            <meta name='abstract' content='PewDiePie vs T-Series: Discord webhook generator'>
+            <meta name='designer' content='Github.com/ItsBrian'>
+            <meta name='owner' content='Github.com/ItsBrian'>
+            <meta name='url' content='http://ItsBrian.github.io/g/Pewdiepie-VS-Tseries/'>
+            <meta name='pagename' content='PewDiePie vs T-Series'>
+            <meta name='subtitle' content='Generate a customizable message that sends updates about PewDiePie vs T-Series to a Discord channel using the Discord API'>
+            <meta name='HandheldFriendly' content='True'>
+            <meta name='MobileOptimized' content='320'>
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="main.js"></script>
+        </head>
+
+        <body>
+            <center>
+                <div id="newBody">
+                    <div id="mainTitle">
+                        <h1>PewDiePie VS T-Series</h1>
+                        <h2 style="font-size: 25.5px;">Discord Webhook Generator</h2>
+                    </div>
+                    <div id="hr"></div>
+                    <h2 id="pasteTitle">Paste your discord webhook link here:</h2>
+                    <input id="input" autocomplete="off" placeholder="Example: https://discordapp.com/api/webhooks/abc123"><br>
+                    <button id="run" onclick="startGen();">Update URL & start!</button>
+                    <a id="help" href="help/index.html">Help</a>
+                    <h2 id="previewTitle">Preview:</h2>
+                    <div id="preview">
+                        <span style="color:#90710F">Pewdiepie:</span>
+                        <span style="color:#2C706E" id="pewdiepieCS">00.000.000</span>
+                        <span style="color:#2C706E" id="pewdiepieG">(+00)</span><br>
+                        <span style="color:#90710F">T-Series:</span>
+                        <span style="color:#2C706E" id="tseriesCS">00.000.000</span>
+                        <span style="color:#2C706E" id="tseriesG">(+00)</span>
+                        <br><br>
+                        <span style="color:#90710F">Subgap:</span>
+                        <span style="color:#2C706E" id="subgapC">00.000.000</span>
+                        <span style="color:#2C706E" id="subgapG">(+00)</span>
+                    </div>
+                    <div id="stats">
+                        <h2 id="statsTitle">Statistics:</h2>
+                        <h3>Messages sent: <span id="messagesSent">0</span></h3>
+                        <h3>Next message in: <span id="timeLeft">60</span></h3>
+                    </div>
+                    <h3 id="statsTitle">URL Response:</h3>
+                    <iframe name="frameOut" id="frameOut" src="https://itsbrian.github.io/g/pewdiepie-vs-tseries/status.html"></iframe>
+                </div>
+            </center>
+
+            <form method="post" action="" id="form" target="frameOut">
+                <textarea type="text" name="content" id="formContent"></textarea><br>
+                <input type="text" name="username" value="Pewdiepie VS T-series"><br>
+                <input type="text" name="avatar_url" value="icon.png"><br>
+                <input type="submit">
+              </form>
+              
+        </body>
+    </html>
