@@ -107,7 +107,7 @@ function updateSubcounts(){
 function configureForm(){
     console.log("Configuring final form");
     document.getElementById("form").action = URL;
-    document.getElementById("formContent").value = "```yaml\nPewdiepie: " + document.getElementById("pewdiepieCS").innerHTML + " (" + pewdiepieGAIN + ")\nT-Series: " + document.getElementById("tseriesCS").innerHTML + " (" + tseriesGAIN + ")\n\nSubgap: " + document.getElementById("subgapC").innerHTML + " (" + subgapGAIN + ")";
+    document.getElementById("formContent").value = "```yaml\nPewdiepie: " + document.getElementById("pewdiepieCS").innerHTML + " (" + pewdiepieGAIN + ")\nT-Series: " + document.getElementById("tseriesCS").innerHTML + " (" + tseriesGAIN + ")\n\nSubgap: " + document.getElementById("subgapC").innerHTML + " (" + subgapGAIN + ")```";
     document.getElementById("form").submit();
     console.log("Sending form");
 }
