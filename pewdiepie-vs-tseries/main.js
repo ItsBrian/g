@@ -53,15 +53,15 @@ function updateSubcounts(){
     subgapOLD = subgap;
 
      setTimeout(function (){
-        $.getJSON('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UC-lHJZR3Gqxm24_Vd_AJ5Yw&key=AIzaSyDbB3szNvbDXMli7NLFkn5AcCPgNVyYNzY', function(pewdiepieS) {
-            pewdiepie = pewdiepieS.items[0].statistics.subscriberCount;
+        $.getJSON('https://bastet.socialblade.com/youtube/lookup?query=UC-lHJZR3Gqxm24_Vd_AJ5Yw', function(pewdiepieS) {
+            pewdiepie = pewdiepieS;
          console.log("Getting pewdiepie's subs");
      });
     }, 0);
 
     setTimeout(function (){
-        $.getJSON('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq-Fj5jknLsUf-MWSy4_brA&key=AIzaSyDbB3szNvbDXMli7NLFkn5AcCPgNVyYNzY', function(tseriesS) {
-            tseries = tseriesS.items[0].statistics.subscriberCount;
+        $.getJSON('https://bastet.socialblade.com/youtube/lookup?query=UCq-Fj5jknLsUf-MWSy4_brA', function(tseriesS) {
+            tseries = tseriesS;
             console.log("Getting tseries' subs");
      });
     }, 2000);
