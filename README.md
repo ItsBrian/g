@@ -1,2 +1,2 @@
 # g
-All generators
+All generators.
